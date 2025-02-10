@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist",  // Ensure build output goes to dist folder
+    "incremental": true,  // Enable incremental compilation (faster builds)
+    "skipLibCheck": true  // Skip type checking of declaration files (optional)
+  },
+  "include": ["src/**/*"],  // Include all files in the src folder
+  "exclude": ["node_modules", "dist", "test", "**/*spec.ts"]  // Exclude unnecessary folders and test files
+}
